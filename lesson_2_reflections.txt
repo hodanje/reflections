@@ -5,3 +5,12 @@ What happens when you initialize a repository? Why do you need to do it?
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 	Staging area contains only files that are planned to be commited. Working dirrectory on the other side can
 	contain files that are untracked by git, or files that are already commited and sare being tracked by git.
+
+How can you use the staging area to make sure you have one commit per logical change?
+	By comparing last commit with the content of staging area. If there is changes that constitute logical change
+	commit should be performed. Or if there are more then is needet to be commitet, some files can be trown 
+	from staging area with git reset --hard (but will also errase changes in working directory)
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	When experimenting with new features that may or may not be later merge with master branch. When some custumization need to be done outside master 
+	brunch of development
